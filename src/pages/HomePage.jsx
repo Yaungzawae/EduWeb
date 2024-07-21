@@ -1,11 +1,8 @@
-// import { Button } from "../ui/button"
 import { Button } from "@/components/ui/button"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel"
 import TeacherCard from "@/components/customs/TeacherCard"
 import TestimonialCard from "@/components/customs/TestimonialCard"

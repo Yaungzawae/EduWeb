@@ -7,6 +7,7 @@ import Template from "./pages/templates/Template";
 import StudentLoginPage from "./pages/Auth/StudentLoginPage"
 import TeacherLoginPage from "./pages/Auth/TeacherLoginPage";
 import StudentRegisterPage from "./pages/Auth/StudentRegisterPage";
+import TeacherDetailPage, {teacherDetailPageLoader} from "./pages/TeacherDetailPage";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,11 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <StudentRegisterPage/>
+      },
+      {
+        path: "/teacher/:name",
+        element: <TeacherDetailPage/>,
+        loader: teacherDetailPageLoader
       }
     ]
   },
